@@ -60,9 +60,18 @@ ng serve
 SNAPSHOTS
 
 
-![Picture1](https://user-ima<img width="698" alt="Picture4" src="https://user-images.githubusercontent.com/108517129/178406642-7515cd16-660b-4380-af0f-cce1d02219ae.png">![Picture5](https://user-images.githubusercontent.com/108517129/178406648-7ecd38de-e77c-498d-ac66-a5405c012a42.png)
-![Picture6](https://user-images.githubusercontent.com/108517129/178406651-1f3add3c-864e-4474-a02b-cf73bf97004f.png)
+![Picture1](https://user-images.githubusercontent.com/108517129/178406728-c1ec1f67-510b-46dc-ae1b-0240e82e56cf.png)
+--------------------
+![Picture2](https://user-images.githubusercontent.com/108517129/178406754-48524ef0-63fd-4707-82a4-0ae081366e20.png)
+--------------------------------
+![Picture3](https://user-images.githubusercontent.com/108517129/178406762-71d66475-fdc7-4fdf-920a-3dcc89093d3c.png)
+-----------------------------
 
-g![Picture3](https://user-images.githubusercontent.com/108517129/178406640-bbf2af68-d332-4072-a170-9cd8c7d2eb9a.png)
-es.githubusercontent.com/108517129/178406624-739749b5-50de-4027-b5c7-99e0de72f577.png)
-![Picture2](https://user-images.githubusercontent.com/108517129/178406639-85c2d0f6-4e04-4666-9a34-2e84c4d5e232.png)
+<img width="698" alt="Picture4" src="https://user-images.githubusercontent.com/108517129/178406773-0424b941-febd-4e5e-b02b-1919338e5701.png">
+
+-------------
+![Picture5](https://user-images.githubusercontent.com/108517129/178406794-7108eeb6-b93d-4730-aeb5-5f98a2acc6a8.png)
+-----------------
+
+![Picture6](https://user-images.githubusercontent.com/108517129/178406823-5d9f942a-8ef6-411a-b220-50a253b2967c.png)
+
