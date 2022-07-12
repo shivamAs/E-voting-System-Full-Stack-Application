@@ -1,0 +1,44 @@
+<body>
+  <h1 style="text-align: center; font-size: 30px;"> HELLO VOTER!  </h1>
+  <h2 style="text-align: center; font-weight: bold; font-size: 150%;"> LOGIN TO VOTE </h2><br>
+  <div class="container">
+  
+  <small class="text-danger">{{msg}}</small> 
+  <form #loginform = "ngForm"  (ngSubmit)="loginuser()">
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email here " [(ngModel)] ="user.emailid" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" #email = "ngModel"
+        [class.is-invalid] = "email.invalid && email.touched"> 
+        <!-- <small class="text-danger" [class.d-none]="email.valid || email.untouched"> Emailid is required to login  </small> -->
+        <div *ngIf="email.errors && (email.invalid && email.touched)">
+          <small class="text-danger" *ngIf="email.errors" > Email id is required to login. </small>
+          <small class="text-danger" *ngIf="email.invalid"> Enter the valid Email-ID  </small>
+  
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" name="password" placeholder="Your Password"  [(ngModel)] ="user.password" required  #password="ngModel"
+        [class.is-invalid] = "password.invalid && password.touched"> 
+        
+        <small class="text-danger" [class.d-none]="password.valid || password.untouched"> Password is required to login  </small>
+  
+      </div>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+        <label class="form-check-label" for="autoSizingCheck">
+          Remember me
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg" style="margin-left: 220px;" [disabled]="loginform.form.invalid">Login</button>
+    </form>
+  <br>
+  <div class="center">
+    <button [routerLink]="['/adminlogin']"> If you are a admin , click here </button><br>
+    <br>
+    <a class="float-right" [routerLink]="['/register']"> New Voter ? Register here </a>
+  </div>
+  </div>
+  </body>
+  
+  

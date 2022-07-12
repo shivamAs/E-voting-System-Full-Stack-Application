@@ -1,0 +1,15 @@
+<body>
+    <h1 style="font-style: italic; font-size: 30px; color: rgb(139, 130, 46); text-align: center;"> Hello Voters, </h1>
+      <h3 class="center"> Below is the details of the party who won in this Election  </h3> 
+    
+    <div *ngFor="let a of userres" id="cont"><br><br>
+        
+        <h4 style="font-size: 30px; color: red;"> In this Election,  </h4><br>
+        <h4 style="font-size: 20px;"> The winning party is  {{a.partyname}}</h4><br>
+    
+        <h4  style="font-size: 20px;"> The Leader is {{a.partyleadername}} </h4><br>
+        <h4  style="font-size: 20px;"> The Symbol is <img [src]="a.partysymbolpath" width="100" height="100"> </h4><br>
+        <h4  style="font-size: 20px;"> The Highest number of votes is  {{a.votes}} </h4><br>
+        <h4  style="font-size: 20px;"> In {{a.city}}  City </h4><br>
+    </div>
+    </body>

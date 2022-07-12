@@ -1,0 +1,90 @@
+<div id="backimg">
+  
+
+
+ 
+    <img id="image" src={{imagepath_eci}} [alt]="altext_eci" STYLE="position:absolute; TOP:65px; LEFT:170px; WIDTH:100px; HEIGHT:95px" />
+    <img id="image" src={{pollelect}} [alt]="altext_eci" STYLE="position:absolute; TOP:65px; right:170px; WIDTH:100px; HEIGHT:95px" />
+   
+    <div class="header">
+      <h1> Enter the party details here </h1><br> <br>
+    </div>
+  
+    <div id="div1" class="cont">
+      <form #signupForm="ngForm" (ngSubmit)="registerUser(signupForm)">
+          <table style="width: 70%;" cellpadding="5" cellspacing="5">
+              <tr>
+                  <td style="width: 40%;">
+                      <label for="partyname">Party Name:</label>
+                  </td>
+                  <td style="width: 60%;">
+                      <input type="text" name="partyname" id="partyname" ngModel="partyname"  #partyname = "ngModel" required />
+                      <small *ngIf="partyname.touched && !partyname.valid"> Party Name  is compulsory </small>
+                  </td>
+              </tr>
+                  <td style="width: 40%;">
+                      <label for="partysymbolpath">Upload the Symbol: </label>
+                  </td>
+                  <td style="width: 60%;">
+                      <!--input type="file" name="symbol" id="symbol" ngModel="symbol" #symbol = "ngModel" required -->
+                      <span style="color:red;" *ngIf="message">{{message}}</span>
+                      <input type="text"  name="partysymbolpath" id="partysymbolpath" ngModel="partysymbolpath" #partysymbolpath = "ngModel" required/><br>
+                      <a href="https://www.linkpicture.com/en/?set=en" target="_blank">Use this link to get URL for your image. Copy that "Direct Link To Photo:..." and paste in input field </a>
+                      <h1> {{imgURL}} </h1>
+                      <small *ngIf="partysymbolpath.touched && !partysymbolpath.valid"> Symbol is also compulsory </small>
+                    
+                  </td>
+            
+              <tr>
+                  <td style="width: 40%;">
+                      <label for="partyleadername">Leader Name :</label>
+                  </td>
+                  <td style="width: 60%;">
+                      <input type="text" name="partyleadername" id="partyleadername" ngModel="partyleadername" #partyleadername = "ngModel" required/>
+                      <small *ngIf="partyleadername.touched && !partyleadername.valid"> LeaderName is compulsory as well</small>
+  
+                  </td>
+              </tr>
+              <tr>
+                  <td style="width: 40%;">
+                      <label for="city">City Name:</label>
+                  </td>
+                  <td style="width: 60%;">
+                      <input type="text" name="city" id="city" ngModel="city"  #city = "ngModel" required />
+                      <small *ngIf="city.touched && !city.valid"> City Name  is compulsory </small>
+                  </td>
+  
+              
+              </tr><br>
+              <tr>
+                  <td style="width: 40%;"></td>
+                  <td style="width: 60%;">
+                      <button type="submit" [disabled]="!signupForm.valid" class=".btn-primary"> Register</button>
+                      <button (mouseover)="showbutton=true" (mouseout)="showbutton=false" [disabled]="showmessage" > i</button>
+                      <small *ngIf="showbutton && !showmessage"> {{info}}</small>
+                  </td>
+                  
+              </tr>
+          </table>
+      </form><br>
+      <div *ngIf="showmessage">
+        <h1 style="color: green;">Party Details of {{formdData.partyname}} has been registered successfully</h1>
+        <h3>You have currently entered these details:-</h3>
+        <ul>
+          <li>Your Party name is {{formdData.partyname}}</li>
+            <li>Your Party Symbol is {{formdData.partysymbolpath}}</li>
+            <li>Your Party Leader name is {{formdData.partyleadername}}</li>
+            <li>Your Election City name is {{formdData.city}}</li>
+  
+        </ul>
+      </div>
+  </div><br>
+<br>
+    <div class="look">
+  <button [disabled]="!showmessage" (mouseover)="showbutton=true"  [routerLink]="['/details']" id="look" > View entered details </button>
+  <button  (mouseover)="showbutton=true" (mouseout)="showbutton=false" [disabled]="showmessage"> i</button>
+  <small *ngIf="showbutton && !showmessage"> {{info}}</small>
+</div>   
+</div>
+
+  <router-outlet></router-outlet>

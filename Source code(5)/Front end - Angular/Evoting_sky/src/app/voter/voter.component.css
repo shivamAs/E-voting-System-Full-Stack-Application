@@ -1,0 +1,19 @@
+.vh-100{
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRssZ-8WlpZMvfxL4-G4t0f88QCm25DeWoVUg&usqp=CAU');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center; */
+    background-color: white;
+}
+.center{
+    text-align: center;
+    font-size: 250%;
+    font-weight: bold;
+    font-family: Copperplate, Papyrus, fantasy;
+    text-decoration: underline;
+    color: green;
+}
+.tbody{
+   font-size: 120%;
+}

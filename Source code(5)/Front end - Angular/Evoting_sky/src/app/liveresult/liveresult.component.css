@@ -1,0 +1,26 @@
+#cont{
+    background-color: #fff;
+	border-radius: 10px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	width: 600px;
+    height:500px;
+    margin-left: 400px;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 100%;
+    font-style: italic;
+}
+body{
+    background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pf-s48-ted-0345-jj_2.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f96b20d0cb8c699fa3458faca0913028');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.center{
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+    /* margin-top: 20%; */
+}
+h4{font-family: cursive;
+}

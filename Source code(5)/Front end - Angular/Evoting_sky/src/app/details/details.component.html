@@ -1,0 +1,15 @@
+<body>
+  <div class="image">
+  </div>
+<h1 class="look"> The Party Details that you have entered  are :- </h1><br>
+        <div *ngFor="let a of datafromserv" id="cont" class="center">
+            <p> Party name  = {{a.partyname}}<br>
+              Party Symbol = {{a.partysymbolpath}}<br>
+              Party Leader name = {{a.partyleadername}}<br>
+              Election City Name = {{ a.city}}</p>
+        </div><br>
+        <h2>If you entered all the details correct, Please click submit...</h2>
+        <button class="color" (click)="confirm()">Submit</button>
+      </body>
+    
+

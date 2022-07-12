@@ -1,0 +1,21 @@
+.form-group{
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#cont{
+    border-radius: 10px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	width: 1345px;
+    height: 850px;
+    margin: 50px,auto;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKcsy4WcvfyN5cRW2Wv7SyBBgFQtJbtB17VQ&usqp=CAU');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.bold{
+    text-align: center;
+    font-size: 180%;
+    font-weight: bold;
+}

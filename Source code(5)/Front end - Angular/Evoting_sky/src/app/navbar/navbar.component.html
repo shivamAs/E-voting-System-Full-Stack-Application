@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg navbar-primary" style="background-color: #e3f2fd; padding: 15px;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../../assets/images/colorlogo.png" height="75px" width="250px">
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div  id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="navbar-brand"routerLink="/homepage" >Home</a>
+                <a routerLink="/about" class="navbar-brand">About</a>
+                <button *ngIf="login" class="navbar-brand" (click)="onlogin()">Login</button>
+                <button  *ngIf="logout"  class="navbar-brand" (click)="onlogout()"> Logout</button>
+                <a routerLink="/instructions" class="navbar-brand" >Instructions</a>
+                <a class="navbar-brand" href="https://eci.gov.in/statistical-report/statistical-reports/">Statistics</a>
+            </div>
+        </div>
+    </div>
+</nav>

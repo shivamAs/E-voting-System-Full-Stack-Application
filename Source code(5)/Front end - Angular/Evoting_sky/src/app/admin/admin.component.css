@@ -1,0 +1,51 @@
+.header {
+  /* background-color: #ca7fda; */
+  text-align: center;
+  padding: 1px;
+  border-color: #b85f9a;
+  shape-rendering: auto;
+    }
+#backimg{
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoufaoocv_HlY-8I8rHWIDS7R-LLJKhyTzFRZeJ34j0sAX0t1h8cIresvwovIkai39AJQ&usqp=CAU');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+height: 780px;
+}
+h1{
+  font-size: xx-large;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  /* color: rgb(255, 0, 170); */
+  color:green;
+  font-size: 250%;
+  font-weight: bold;
+  /* background-color: rgb(214, 224, 68); */
+   }
+form{
+  size: 40px;
+  block-size: 40%;
+}
+input.ng-touched.ng-invalid{
+  border: 2px solid red;
+ }
+small{
+  color: red;
+  }
+.cont{
+text-align: center;
+background-color: #fff;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+  width: 800px;
+  margin-top: 100px ;
+  margin-left: 20%;
+}
+.look{
+text-align: center;
+}
+#look{
+background-color: hotpink;
+font-size: 100%;
+}

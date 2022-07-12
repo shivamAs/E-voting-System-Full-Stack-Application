@@ -1,0 +1,26 @@
+.container {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	width: 550px;
+    height: 400px;
+    margin: 50px,auto;
+
+}
+.form-group{
+    font-size: 120%;
+    font-weight: bold;
+}
+body{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHoUR6K79tWIOrjE6_p9QIQyIM4mvECuS-Qg&usqp=CAU');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 200%; 
+   
+}
+.center{
+    text-align: center;
+}
+#look{
+   background-color: hotpink;
+}

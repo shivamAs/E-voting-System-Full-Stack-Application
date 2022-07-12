@@ -1,0 +1,32 @@
+.header {
+    background-color: #ca7fda;
+    text-align: center;
+    padding: 1px;
+    border-color: #b85f9a;
+    shape-rendering: auto;
+  }
+  
+         
+          h1{
+            font-size: xx-large;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+            color: blue;
+            background-color: rgb(214, 224, 68);
+          }
+   
+          
+  form{
+    size: 40px;
+    block-size: 40%;
+  }
+         
+          
+  input.ng-touched.ng-invalid{
+
+    border: 2px solid red;
+  }
+
+  small{
+    color: red;
+  }

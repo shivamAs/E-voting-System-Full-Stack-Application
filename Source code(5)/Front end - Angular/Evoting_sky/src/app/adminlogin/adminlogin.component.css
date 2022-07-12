@@ -1,0 +1,25 @@
+.container {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	width: 550px;
+    height: 420px;
+    margin: 50px,auto;
+    margin-top: 5%;
+}
+body{
+    background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.form-group{
+    font-size: 120%;
+    font-weight: bold;
+}
+.center{
+    text-align: center;
+}
+#look{
+    background-color: lightgreen;
+}

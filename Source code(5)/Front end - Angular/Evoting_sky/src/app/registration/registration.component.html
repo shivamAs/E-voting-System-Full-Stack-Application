@@ -1,0 +1,112 @@
+
+<!-- <section class="vh-100" style="background-color: #eee;">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-lg-12 col-xl-11"> -->
+          <div class="card text-black" style="border-radius: 25px;">
+            <div class="card-body p-md-5"  id="cont" style="background-color:saddlebrown;">
+              <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1" id="reg">
+  
+                  <p class="bold ">Sign Up to Become  VOTER! </p><br>
+  
+                  <form  #Registerform = "ngForm" (ngSubmit)="RegisterUser()">
+
+                <small class="text-danger">{{msg}}</small>
+                <div class="form-group">
+                  <div class="d-flex flex-row align-items-center mb-4">
+
+                      <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        
+                        <label class="form-label" for="form3Example1c">Your Email-ID</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email here " [(ngModel)] ="user.emailid" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" #email = "ngModel"
+                        [class.is-invalid] = "email.invalid && email.touched"> 
+                        <!-- <small class="text-danger" [class.d-none]="email.valid || email.untouched"> Emailid is required to login  </small> -->
+                        <div *ngIf="email.errors && (email.invalid && email.touched)">
+                          <small class="text-danger" *ngIf="email.errors" > Emailid is required to Signup!.   </small>
+                          <small class="text-danger" *ngIf="email.invalid"> Enter the valid Email-ID  </small>                        </div>
+                    </div>
+                   
+              </div>
+</div>
+
+<div class="form-group">
+
+    <div class="d-flex flex-row align-items-center mb-4">
+      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+      <div class="form-outline flex-fill mb-0">
+        <label class="form-label" for="form3Example3c">Your Name</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="Enter your name here " [(ngModel)] ="user.username" required  #username = "ngModel"
+[class.is-invalid] = "username.invalid && username.touched"> 
+<!-- <small class="text-danger" [class.d-none]="email.valid || email.untouched"> Emailid is required to login  </small> -->
+<div *ngIf="username.errors && (username.invalid && username.touched)">
+<small class="text-danger" *ngIf="username.errors" > Username is required to Signup. </small>
+<small class="text-danger" *ngIf="username.invalid"> Enter the valid username </small>
+      </div>
+    </div>
+</div>
+</div>
+
+               
+
+
+                <div class="form-group">
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <label class="form-label" for="form3Example4c">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter password here " [(ngModel)] ="user.password" required #password = "ngModel"
+                        [class.is-invalid] = "password.invalid && password.touched"> 
+                        <!-- <small class="text-danger" [class.d-none]="email.valid || email.untouched"> Emailid is required to login  </small> -->
+                        <div *ngIf="password.errors && (password.invalid && password.touched)">
+                          <small class="text-danger" *ngIf="password.errors" > password is required to login. </small>
+                          <small class="text-danger" *ngIf="password.invalid"> Enter the valid password </small>
+                      </div>
+               </div>
+</div>
+</div>
+
+
+
+
+
+<div class="form-group">
+
+    <div class="d-flex flex-row align-items-center mb-4">
+      <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+      <div class="form-outline flex-fill mb-0">
+        <label class="form-label" for="form3Example4cd">Confirm your password</label>
+        <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Enter the confirm password here " (ngModel) ="user.password" required  #cpassword = "ngModel"
+        [class.is-invalid] = " cpassword.invalid && (cpassword.touched && cpassword.value != password.value)"> 
+         <small class="text-danger" [class.d-none]="(cpassword.value == password.value) || cpassword.untouched"> Confirm Password must be as same as the password you entered to Signup </small> 
+         <div *ngIf="(cpassword.errors && (cpassword.invalid && cpassword.touched ))">
+            <small class="text-danger" *ngIf="cpassword.errors" > Confirm password field must be filled  </small>
+            <small class="text-danger" *ngIf="cpassword.invalid"> Confirm Password must be as same as the password you entered to Signup </small>
+        </div>
+
+       
+</div>
+</div>
+</div>
+<div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+    <button type="submit" class="btn btn-primary btn-lg"  [disabled]="Registerform.form.invalid">Register</button><br>
+    
+  </div>
+  <a [routerLink]="['/login']"> Do you already have a account ? Login here </a> 
+</form>
+
+
+                  </div>
+               
+               
+                
+              </div>
+            </div>
+          </div>
+        <!-- </div>
+      </div>
+    </div>
+</section> -->
+      
